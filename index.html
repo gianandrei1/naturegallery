@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Nature Gallery
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="navbar">
+                <div class="icon">
+                    <h1>NATURE IMAGE GALLERY</h1>
+
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">SERVICE</a></li>
+                        <li><a href="#">DESIGN</a></li>
+                        <li><a href="https://www.facebook.com/gianandrei.gelay/" target="_blank">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <div class="gallery">
+            <div class="image-box active">
+                <img src="images/ocean (2).jpg">
+                <a href="https://www.youtube.com/watch?v=h0W5GBobAZE" target="_blank"><span class="image-text">OCEAN</span></a>
+
+            </div>
+            <div class="image-box">
+                <img src="images/forest.jpg">
+                <a href="https://www.youtube.com/watch?v=MFLVmAE4cqg" target="_blank"><span class="image-text">FOREST</span></a>
+            </div>
+            <div class="image-box">
+                <img src="images/mountain.jpg">
+                <a href="https://www.youtube.com/watch?v=-oOoTIuoL8M" target="_blank"><span class="image-text">MOUNTAINS</span></a>
+            </div>
+            <div class="image-box">
+                <img src="images/desert.jpg">
+                <a href="https://www.youtube.com/watch?v=RdFkC6Gtb5A" target="_blank"><span class="image-text">DESERT</span></a>
+            </div>
+            <div class="image-box">
+                <img src="images/sky.jpg">
+                <a href="https://www.youtube.com/watch?v=W6Wzk7VuC00" target="_blank"><span class="image-text">SKY</span></a>
+            </div>
+        </div>
+
+        <div class="divider">
+            <div class="image-container">
+                <img src="images/siragao.jpg" alt="siargao">
+                <h2>SIARGAO <br> 
+                    <span class="letter" style="color: orange;">PHILIPPINES</span>
+                 </h2>
+                <p>Siargao, often referred to as the "Surfing Capital of the Philippines," 
+                    is a stunning island located in the northeastern part of Mindanao. 
+                    Known for its crystal-clear waters, white sandy beaches, and laid-back atmosphere, 
+                    Siargao offers an idyllic escape for nature lovers and adventure seekers alike. Its famous beaches, 
+                    such as Cloud 9, are world-renowned for perfect surfing waves, attracting surfers from all over the globe. 
+                    Beyond surfing, Siargao is home to pristine beaches like Sugba Lagoon, with its turquoise waters and surrounding lush greenery, 
+                    as well as the tranquil island of Daku, 
+                    where visitors can relax and experience the natural beauty of the island. Siargao’s unspoiled landscapes and warm, 
+                    welcoming locals make it a paradise for those looking to experience both adventure and relaxation.
+                    With its unspoiled nature and warm, welcoming locals, Siargao remains a hidden gem in the Philippines, 
+                    offering unforgettable experiences for travelers looking to connect with nature and indulge in island life.
+                </p>
+            </div>
+            
+        </div>
+
+        <div class="footer">
+            <p>© 2025 Gian Gallery | All Rights Reserved</p>
+        </div>
+
+        <script>
+            window.addEventListener('scroll', function() {
+                const divider = document.querySelector('.divider');
+                const dividerPosition = divider.getBoundingClientRect().top;
+
+                if (dividerPosition <= window.innerHeight * 0.8) {
+                    divider.classList.add('show');
+                }
+            });
+        </script>
+
+    </body>
+
+</html>
